@@ -31,8 +31,7 @@ $(document).keypress(function(e) {
         window.open(uri,"_self")
     }
     if (e.ctrlKey && String.fromCharCode(e.which) == 'w'){
-        var form_id = 'cpwhm_info_' + server_num
-        console.log(form_id)
+        console.log("Opening WHM for server " + server_num)
         whm_login('/',server_num)
     }
 });
